@@ -4,11 +4,11 @@
 با در نظر گرفتن طراحی Domain Driven Design (شکل زیر) عملیات CRUD را بر روی موجودیت نشریه پیاده سازی نمایید. عملیات ایجاد مدل داده را به صورت CodeFirst پیاده سازی نمایید و برای ذخیره سازی داده و تست از InMemoryDatabase   استفاده نمایید.
 یک FrontEnd بسیار ساده که میتواند تنها شامل تگ های html و دستورات اسکریپت باشد فقط برای نمایش داده طراحی شود. (در صورت تمایل میتوانید UI کاربرپسندی برای نمایش اطلاعات طراحی نمایید). برای نمایش داده WebAPI های طراحی شده در Backend را فرخوانی نمایید.
 
-![DDD](https://github.com/aminzare2000/CRUD/assets/23633696/9903840f-3b06-447a-8a28-4120be7755f7)
+![DDD](https://github.com/aminzare2000/CRUD/pictures/ddd.png)
 
 
 
-![table](https://github.com/aminzare2000/CRUD/assets/23633696/844f4f36-6a14-4e34-a968-e4b1e73476b4)
+![table](https://github.com/aminzare2000/CRUD/pictures/tables.png)
 
 
 <p dir="rtl">
