@@ -44,6 +44,6 @@
 عدم امکان درج سازمان بدون عنوان اصلی سازمان
 <br/>
 
-استفاده از  GitHub repository: لطفا journal-organ repository را بطور private در GitHub خود clone نمایید و سپس کاربر aminzare2000 را به عنوان همکار در repository خود اضافه کنید. Commit ها مرحله به مرحله با عبارات معنادار انجام شود.
+استفاده از  GitHub repository: لطفا CRUD repository را بطور private در GitHub خود clone نمایید و سپس کاربر aminzare2000 را به عنوان همکار در repository خود اضافه کنید. Commit ها مرحله به مرحله با عبارات معنادار انجام شود.
 
 </p>
