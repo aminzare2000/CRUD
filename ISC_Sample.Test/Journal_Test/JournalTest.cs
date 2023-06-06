@@ -28,8 +28,8 @@ namespace ISC_Sample.Test.Journal_Test
 
             _configuration = builder.Build();
             _options = new DbContextOptionsBuilder<IscDbContext>()
-                //.UseInMemoryDatabase(_configuration.GetConnectionString("ISCConnectionString"))
-                .UseSqlServer(_configuration.GetConnectionString("ISCConnectionString"))
+                //.UseSqlServer(_configuration.GetConnectionString("ISCConnectionString"))
+                .UseInMemoryDatabase(databaseName: "ISCDb")
                 .Options;
 
             #endregion

@@ -25,8 +25,9 @@ namespace ISC_Sample.EntityFrameworkCore.ISCDbContextProject
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("ISCConnectionString"));
-            base.OnConfiguring(optionsBuilder);
+            //optionsBuilder.UseSqlServer(_configuration.GetConnectionString("ISCConnectionString"));
+            optionsBuilder.UseInMemoryDatabase(databaseName:"ISCDb");
+            //base.OnConfiguring(optionsBuilder);
         }
 
         public DbSet<Journal> Journals { get; set; }
