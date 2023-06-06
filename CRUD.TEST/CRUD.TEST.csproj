@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CRUD.LOGIC\CRUD.LOGIC.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ISC_Sample.Command\ISC_Sample.Command.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Domain\ISC_Sample.Domain.csproj" />
+    <ProjectReference Include="..\ISC_Sample.EntityFrameworkCore\ISC_Sample.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Handler\ISC_Sample.Handler.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Repository\ISC_Sample.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
