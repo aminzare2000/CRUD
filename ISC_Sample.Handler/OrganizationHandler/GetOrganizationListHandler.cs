@@ -1,6 +1,5 @@
 ﻿using ISC_Sample.Domain.Entity;
 using ISC_Sample.Domain.Repository;
-using ISC_Sample.Queries.JournalQueries;
 using ISC_Sample.Queries.OrganizationQueries;
 using MediatR;
 
