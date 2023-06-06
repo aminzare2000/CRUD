@@ -18,7 +18,7 @@ namespace ISC_Sample.EntityFrameworkCore.ISCDbContextProject
         //    _configuration = configuration;
         //}
 
-        public IscDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
+        public IscDbContext(IConfiguration configuration) 
         {
             _configuration = configuration;
         }

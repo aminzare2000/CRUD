@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ISC_Sample.Domain.Entity;
+﻿using ISC_Sample.Domain.Entity;
 using ISC_Sample.Domain.Repository;
 using ISC_Sample.EntityFrameworkCore.ISCDbContextProject;
+using Microsoft.EntityFrameworkCore;
 
 namespace ISC_Sample.Repository.JournalRepository
 {
@@ -18,14 +14,14 @@ namespace ISC_Sample.Repository.JournalRepository
             _dbContext = dbContext;
         }
 
-        public Task<List<Journal>> GetJournalListAsync()
+        public async Task<List<Journal>> GetJournalListAsync()
         {
-            throw new NotImplementedException();
+            return await _dbContext.Journals.ToListAsync();
         }
 
-        public Task<Journal> GetJournalByIdAsync(int id)
+        public async Task<Journal> GetJournalByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Journals.Where(it => it.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<Journal> AddJournalAsync(Journal journal)
@@ -35,14 +31,17 @@ namespace ISC_Sample.Repository.JournalRepository
             return result.Entity;
         }
 
-        public Task<int> UpdateJournalAsync(Journal journal)
+        public async Task<int> UpdateJournalAsync(Journal journal)
         {
-            throw new NotImplementedException();
+            _dbContext.Journals.Update(journal);
+            return await _dbContext.SaveChangesAsync();
         }
 
-        public Task<int> DeleteJournalAsync(int id)
+        public async Task<int> DeleteJournalAsync(int id)
         {
-            throw new NotImplementedException();
+            var filteredData = _dbContext.Journals.Where(it => it.Id == id).FirstOrDefault();
+            if (filteredData != null) _dbContext.Journals.Remove(filteredData);
+            return await _dbContext.SaveChangesAsync();
         }
     }
 }

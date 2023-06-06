@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,6 +13,16 @@
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ISC_Sample.Command\ISC_Sample.Command.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Domain\ISC_Sample.Domain.csproj" />
+    <ProjectReference Include="..\ISC_Sample.EndPoint\ISC_Sample.EndPoint.csproj" />
+    <ProjectReference Include="..\ISC_Sample.EntityFrameworkCore\ISC_Sample.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Handler\ISC_Sample.Handler.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Queries\ISC_Sample.Queries.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Repository\ISC_Sample.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,4 +13,19 @@
     <ProjectReference Include="..\ISC_Sample.Queries\ISC_Sample.Queries.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resoure\ExceptionHandler.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ExceptionHandler.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resoure\ExceptionHandler.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionHandler.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
