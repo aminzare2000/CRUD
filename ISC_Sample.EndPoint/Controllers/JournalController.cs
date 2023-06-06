@@ -58,7 +58,7 @@ namespace ISC_Sample.EndPoint.Controllers
 
         [HttpPut]
         [Route("UpdateJournal")]
-        public async Task<int> UpdateCustomerAsync(Journal journal)
+        public async Task<int> UpdateJournalAsync(Journal journal)
         {
             var isJournalUpdated = await _mediator.Send(new UpdateJournalCommand(
                 journal.Title,

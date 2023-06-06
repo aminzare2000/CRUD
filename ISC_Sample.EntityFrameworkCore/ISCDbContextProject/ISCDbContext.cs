@@ -31,5 +31,6 @@ namespace ISC_Sample.EntityFrameworkCore.ISCDbContextProject
         }
 
         public DbSet<Journal> Journals { get; set; }
+        public DbSet<Organization> Organizations { get; set; }
     }
 }
