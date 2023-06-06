@@ -7,6 +7,6 @@ namespace ISC_Sample.Domain.Entity
         public string Title { get; set; }
         public long Issn { get; set; }
         public string WebSite { get; set; }
-        public long Email { get; set; }
+        public string Email { get; set; }
     }
 }

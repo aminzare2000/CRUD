@@ -5,7 +5,7 @@ namespace ISC_Sample.Command.JournalCommand
 {
     public class CreateJournalCommand : IRequest<Journal>
     {
-        public CreateJournalCommand(string title, long issn, string webSite, long email)
+        public CreateJournalCommand(string title, long issn, string webSite, string email)
         {
             Title = title;
             Issn = issn;
@@ -16,6 +16,6 @@ namespace ISC_Sample.Command.JournalCommand
         public string Title { get; set; }
         public long Issn { get; set; }
         public string WebSite { get; set; }
-        public long Email { get; set; }
+        public string Email { get; set; }
     }
 }

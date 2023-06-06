@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ISC_Sample.Domain\ISC_Sample.Domain.csproj" />
+    <ProjectReference Include="..\ISC_Sample.EntityFrameworkCore\ISC_Sample.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\ISC_Sample.Handler\ISC_Sample.Handler.csproj" />
+  </ItemGroup>
 
 </Project>
